@@ -38,6 +38,9 @@ Customer-360 style churn modeling on synthetic data: transaction, engagement, an
 ### 🔄 [Global ETL Data Pipeline](https://github.com/rudhrestam/global-etl-data-pipeline)
 Batch ETL with a data-quality layer that reverts and quarantines bad files instead of loading them. Based on the McDonald's pipeline that moved 30+ GB/day from 6+ global markets (AWS, Kafka, Airflow) inside a strict 3-hour SLA.
 
+### ☀️ [Solar Grid Efficiency AI](https://github.com/rudhrestam/solar-grid-efficiency-ai)
+A personal project exploring AI in energy systems: a simulated solar plant (100% synthetic data) that tracks the full loss chain between generation and grid export — soiling, degradation, downtime, inverter and wiring losses, curtailment — then uses ML to forecast generation, flag underperforming strings, and rank which losses are worth fixing. In the demo run, 16.2% of generated energy never reaches the grid, and the detector finds the two planted faults exactly.
+
 ## Experience
 
 | Role | Company | Period |
