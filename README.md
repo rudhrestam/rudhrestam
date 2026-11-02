@@ -1,4 +1,4 @@
-# Hi, I'm Rudreshwar Toutam 👋
+# Hi, I'm Rudresh 👋
 
 **AI/ML Engineer | LLM Agents & GenAI Systems | Python | AWS, Azure | 8+ Years Shipping Production ML**
 
@@ -43,19 +43,14 @@ A personal project exploring AI in energy systems: a simulated solar plant (100%
 
 ## Experience
 
-| Role | Company | Period |
-|---|---|---|
-| Database Automation Engineer | Morgan Stanley | Mar 2025 – Present |
-| Senior Python Developer / Data Engineer | McDonald's | Sep 2022 – Mar 2025 |
-| Python Developer / Data Engineer | E*TRADE | Sep 2021 – Aug 2022 |
-| Data Engineer | GE Aviation | Feb 2021 – Aug 2021 |
-| Python Developer / Data Engineer | BlueCross BlueShield | Jan 2020 – Jan 2021 |
-| Python Developer / Data Engineer | Iplace Software Solutions | Jul 2016 – Sep 2018 |
+I started out as a Python developer and data engineer at Iplace Software Solutions, building ETL for medical-device and healthcare data, then moved to BlueCross BlueShield, where I automated multi-source healthcare claims processing with Spark and Kafka — 300 claims in parallel, ~45% faster processing, and 10–15% fewer rejections. From there I joined E*TRADE as a Python developer and data engineer, leading a Python 2.7 → 3.8+ migration of a legacy automation codebase to 80% test coverage and automating quarterly SEC regulatory data submissions, and spent time at GE Aviation building multi-source ingestion and data-quality workflows feeding analytics.
+
+At McDonald's, as a senior Python developer and data engineer, I ran a global data pipeline moving 30+ GB/day from 6+ markets inside a 3-hour SLA and built the Customer 360 churn platform over nightly data from 18,000+ restaurants — models at 70–90% accuracy, with insights delivered daily. Today I'm a Database Automation Engineer at Morgan Stanley, where I build LLM retrieval tooling for the operations team and large-scale automation, including a post-reboot verification framework that checks 1,800 servers and eliminated ~800 manual hours per quarter.
 
 ## Education & certification
 
 - 🎓 Master's Degree, Computer Science — Texas A&M University-Kingsville
-- ☁️ AWS Certified Data Engineer – Associate (Jan 2025)
+- ☁️ AWS Certified Data Engineer – Associate — Amazon Web Services
 
 ## Get in touch
 
