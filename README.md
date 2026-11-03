@@ -41,6 +41,18 @@ Batch ETL with a data-quality layer that reverts and quarantines bad files inste
 ### ☀️ [Solar Grid Efficiency AI](https://github.com/rudhrestam/solar-grid-efficiency-ai)
 A personal project exploring AI in energy systems: a simulated solar plant (100% synthetic data) that tracks the full loss chain between generation and grid export — soiling, degradation, downtime, inverter and wiring losses, curtailment — then uses ML to forecast generation, flag underperforming strings, and rank which losses are worth fixing. In the demo run, 16.2% of generated energy never reaches the grid, and the detector finds the two planted faults exactly.
 
+### 🏥 [Healthcare Claims Intelligence](https://github.com/rudhrestam/healthcare-claims-intelligence)
+Denial prediction on 5,930 synthetic claims: a GradientBoosting model (ROC-AUC 0.795) scores denial risk before submission, and the analysis ranks the drivers — missing prior authorisation (63.9% denied vs 16.2% without) and coding mismatches lead — plus an estimate of the denied dollars recoverable by fixing the top one. Synthetic data only; a standalone demo of the claims-analytics pattern.
+
+### 🛡️ [Regulatory Reporting Data Quality](https://github.com/rudhrestam/regulatory-reporting-data-quality)
+A pre-submission data-quality framework for financial reporting extracts: 14 named checks across schema, completeness, validity, uniqueness, consistency, and reconciliation against a control file. In the demo, all 295 planted defects in 5,040 synthetic records are caught and quarantined — a 94.15% DQ score, with the reconciliation deltas explained.
+
+### 🍽️ [Restaurant Demand Forecasting](https://github.com/rudhrestam/restaurant-demand-forecasting)
+Daily demand forecasting for 8 synthetic restaurants: a RandomForest over day-of-week, holidays, weather, promotions, events, and feedback sentiment forecasts orders with test MAE 28.0 (R² 0.832), beating a same-weekday-last-week baseline by 22.6% — then turns next week's forecast into prep and staffing tiers per location.
+
+### 🖥️ [Server Log Anomaly Detection](https://github.com/rudhrestam/server-log-anomaly-detection)
+A generic log-anomaly demo over ~190K synthetic log lines from 10 hosts: logs are parsed into per-host 30-minute windows and scored two ways — IsolationForest and per-host z-score baselines. Between them they catch 42 of 46 planted anomaly windows (an error burst, a latency spike, and one host failing slowly), with the false positives discussed honestly.
+
 ## Experience
 
 I started out as a Python developer and data engineer at Iplace Software Solutions, building ETL for medical-device and healthcare data, then moved to BlueCross BlueShield, where I automated multi-source healthcare claims processing with Spark and Kafka — 300 claims in parallel, ~45% faster processing, and 10–15% fewer rejections. From there I joined E*TRADE as a Python developer and data engineer, leading a Python 2.7 → 3.8+ migration of a legacy automation codebase to 80% test coverage and automating quarterly SEC regulatory data submissions, and spent time at GE Aviation building multi-source ingestion and data-quality workflows feeding analytics.
