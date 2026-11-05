@@ -53,6 +53,15 @@ Daily demand forecasting for 8 synthetic restaurants: a RandomForest over day-of
 ### 🖥️ [Server Log Anomaly Detection](https://github.com/rudhrestam/server-log-anomaly-detection)
 A generic log-anomaly demo over ~190K synthetic log lines from 10 hosts: logs are parsed into per-host 30-minute windows and scored two ways — IsolationForest and per-host z-score baselines. Between them they catch 42 of 46 planted anomaly windows (an error burst, a latency spike, and one host failing slowly), with the false positives discussed honestly.
 
+### 🧱 [dbt Analytics Engineering](https://github.com/rudhrestam/dbt-analytics-engineering)
+A full dbt project on synthetic commerce data: staging, intermediate, and mart models with 31 tests — `dbt build` passes 39/39, and the data-quality mart catches all 19 planted order-total mismatches plus 12 empty orders, reconciling $158,019.67 of revenue across 3,304 completed orders. Built to demonstrate the analytics-engineering patterns behind production pipeline work.
+
+### 🦜 [LangChain RAG Agent](https://github.com/rudhrestam/langchain-rag-agent)
+A LangChain retrieval agent over a small operations-runbook corpus with MiniLM embeddings and a distance-based guardrail: in evaluation it answers 13/13 test questions with the correct source at rank 1, and refuses all 3 off-corpus questions instead of hallucinating. A companion to the LLM Knowledge Retrieval Agent above, built with the framework stack.
+
+### ☸️ [Docker & Kubernetes ML Service](https://github.com/rudhrestam/docker-kubernetes-ml-service)
+A small ML model (ROC-AUC 0.7964) packaged as a containerized FastAPI-style service with Kubernetes deployment and service manifests: a 60-prediction smoke test runs at p95 latency 63.9 ms. All manifests validated locally; the build sandbox had no Docker daemon, so the image build itself is documented rather than claimed.
+
 ## Experience
 
 I started out as a Python developer and data engineer at Iplace Software Solutions, building ETL for medical-device and healthcare data, then moved to BlueCross BlueShield, where I automated multi-source healthcare claims processing with Spark and Kafka — 300 claims in parallel, ~45% faster processing, and 10–15% fewer rejections. From there I joined E*TRADE as a Python developer and data engineer, leading a Python 2.7 → 3.8+ migration of a legacy automation codebase to 80% test coverage and automating quarterly SEC regulatory data submissions, and spent time at GE Aviation building multi-source ingestion and data-quality workflows feeding analytics.
