@@ -30,13 +30,13 @@ Open-source demos of the patterns behind my production work — original code, s
 A retrieval agent (Python + scikit-learn) that answers questions from runbooks and documentation with citations — and refuses rather than guessing when nothing supports an answer. Demo of the pattern behind the operations knowledge agent I built at Morgan Stanley, which the whole ops team adopted.
 
 ### 🩺 [Server Health Verification Framework](https://github.com/rudhrestam/server-health-verification-framework)
-Parallel health-check automation with per-check validation, a summary report, and an audit log. The production version verifies 1,800 servers after OS patching — checks run 20 at a time — and eliminated ~800 manual hours per quarter, with zero missed checks since launch.
+Parallel health-check automation with per-check validation, a summary report, and an audit log. The production version verifies the production and test server fleet after OS patching — checks run 20 at a time — with zero missed checks since launch.
 
 ### 📊 [Customer Churn Prediction](https://github.com/rudhrestam/customer-churn-prediction)
-Customer-360 style churn modeling on synthetic data: transaction, engagement, and feedback-sentiment features feeding a classifier and a daily-insights summary. Based on the McDonald's platform that combined nightly data from 18,000+ restaurants with sentiment and clickstream signals — models at 70–90% accuracy.
+Customer-360 style churn modeling on synthetic data: transaction, engagement, and feedback-sentiment features feeding a classifier and a daily-insights summary. Based on the McDonald's platform that combined nightly restaurant sales data with sentiment and clickstream signals — models at 70–90% accuracy.
 
 ### 🔄 [Global ETL Data Pipeline](https://github.com/rudhrestam/global-etl-data-pipeline)
-Batch ETL with a data-quality layer that reverts and quarantines bad files instead of loading them. Based on the McDonald's pipeline that moved 30+ GB/day from 6+ global markets (AWS, Kafka, Airflow) inside a strict 3-hour SLA.
+Batch ETL with a data-quality layer that reverts and quarantines bad files instead of loading them. Based on the McDonald's pipeline that ran nightly across 6+ global markets (AWS, Kafka, Airflow).
 
 ### ☀️ [Solar Grid Efficiency AI](https://github.com/rudhrestam/solar-grid-efficiency-ai)
 A personal project exploring AI in energy systems: a simulated solar plant (100% synthetic data) that tracks the full loss chain between generation and grid export — soiling, degradation, downtime, inverter and wiring losses, curtailment — then uses ML to forecast generation, flag underperforming strings, and rank which losses are worth fixing. In the demo run, 16.2% of generated energy never reaches the grid, and the detector finds the two planted faults exactly.
@@ -62,11 +62,14 @@ A LangChain retrieval agent over a small operations-runbook corpus with MiniLM e
 ### ☸️ [Docker & Kubernetes ML Service](https://github.com/rudhrestam/docker-kubernetes-ml-service)
 A small ML model (ROC-AUC 0.7964) packaged as a containerized FastAPI-style service with Kubernetes deployment and service manifests: a 60-prediction smoke test runs at p95 latency 63.9 ms. All manifests validated locally; the build sandbox had no Docker daemon, so the image build itself is documented rather than claimed.
 
+### 🧵 [Textile Refund Processing](https://github.com/rudhrestam/textile-refund-processing)
+A refund desk for a textile shop that takes the stress out of refunds — for staff and for customers. A policy engine gives a clear recommendation for every request (full refund, part refund, exchange, store credit, or no refund) with the reason in plain words, a guided workflow moves each case from intake to closed with an audit trail, and staff get warm, jargon-free customer messages plus a calm queue and SLA dashboard that balances work across the team. Feedback is captured after each resolution (48 pytest tests pass; the demo day covers three customers and ends with an average rating of 4.67).
+
 ## Experience
 
 I started out as a Python developer and data engineer at Iplace Software Solutions, building ETL for medical-device and healthcare data, then moved to BlueCross BlueShield, where I automated multi-source healthcare claims processing with Spark and Kafka — 300 claims in parallel, ~45% faster processing, and 10–15% fewer rejections. From there I joined E*TRADE as a Python developer and data engineer, leading a Python 2.7 → 3.8+ migration of a legacy automation codebase to 80% test coverage and automating quarterly SEC regulatory data submissions, and spent time at GE Aviation building multi-source ingestion and data-quality workflows feeding analytics.
 
-At McDonald's, as a senior Python developer and data engineer, I ran a global data pipeline moving 30+ GB/day from 6+ markets inside a 3-hour SLA and built the Customer 360 churn platform over nightly data from 18,000+ restaurants — models at 70–90% accuracy, with insights delivered daily. Today I'm a Database Automation Engineer at Morgan Stanley, where I build LLM retrieval tooling for the operations team and large-scale automation, including a post-reboot verification framework that checks 1,800 servers and eliminated ~800 manual hours per quarter.
+At McDonald's, as a senior Python developer and data engineer, I ran a global data pipeline across 6+ markets and built the Customer 360 churn platform over nightly restaurant sales data — models at 70–90% accuracy, with insights delivered daily. Today I'm a Database Automation Engineer at Morgan Stanley, where I build LLM retrieval tooling for the operations team and large-scale automation, including a post-reboot verification framework that checks the production and test server fleet.
 
 ## Education & certification
 
